@@ -1,59 +1,44 @@
 # NY Times API Kullanma üzerine çalışma
 
-Bu proje bir study case olarak ve kendime bir challenge olarak  adına yaptığım bir projedir.
+API Kullanımı üzerine başlıca Dio, Riverpod gibi sınıflar kullanılarak yapılan basit bir çalışma (A case study)
 
-## Başlarken
+# NYT
 
-Bu bir Flutter projesidir. 
-Sadece mobil arayüzü düşünülerek bir tasarım yapılmıştır. 
+NYT, New York Times'ın haberlerini okumak için basit bir Flutter uygulamasıdır. Uygulama, haber başlıkları, yazarlar ve tarihler gibi haberlerin temel bilgilerini görüntüler.
 
-- NY Times API kullanılmıştır (https://developer.nytimes.com/)
-- [Flutter](https://flutter.dev/)
+## Kurulum
 
+NYT'yi kurmak için aşağıdaki adımları izleyin:
 
-## Bilinmesi gerekenler
-- Uygulama Provider/MVC design patternlerine uygun olarak dizayn edilmiştir. 
+1. Flutter'ı yükleyin.
+2. `git clone https://github.com/axisting/nyt` komutunu kullanarak projeyi klonlayın.
+3. `cd nyt` komutunu kullanarak proje klasörüne gidin.
+4. `flutter run` komutunu kullanarak uygulamayı çalıştırın.
 
-- Uygulama main.dart ile başlar. 
-- route_generator ile sayfaların yönlendirilmesi yapılmıştır.
-- general_provider'da uygulamanın genel Text'leri ve global olarak önemli değişkenler depolanmıştır.
-- widget altında widgetlar sayfalara göre klasörlenmiştir. Global'e etki edebilecek widgetlar kategorize edilmemiştir. Doğrudan widget altındadır. 
-- Uygulamanın ilk açılış sayfası home_page'dir. 
-- Uygulamada her bir widget olabildiğince ayrı ve tekrar kullanılabilir şekilde tasarlanmıştır. 
-- Global bazı sabitler constant klasörü altında toplanmıştır.
-- controller ve repository klasörleri birlikte uygulamanın methot ve fonksiyon kısmını üstlenir
-- Model kısmında NYTimes'ın 2 adet API'si kullanıldığından 2 farklı klasörde kategorize edilmiştir.
+## Kullanım
 
-## Kullanılan bazı kütüphaneler 
-    Riverpod (hooks ile birlikte ) 
-    Dio
-    intl 
-    cached_network_image
-    html
+NYT'yi kullanmaya başlamak için uygulamayı açın ve ana ekranı gezin. Bir haber başlığını tıklamak, haberin ayrıntılı sayfasını açacaktır.
 
-  dio: ^5.2.1+1
-  hooks_riverpod: ^2.3.6
-  flutter_hooks: ^0.18.6
-  intl: ^0.18.1
-  cached_network_image: ^3.2.3
-  html: ^0.15.4
+Haberin ayrıntılı sayfasında, başlığı, yazarını, tarihini ve içeriğini görebilirsiniz. Haberi beğenmek, paylaşmak veya yorum yapmak için ekranın alt kısmındaki düğmeleri kullanabilirsiniz.
 
-## Uygulamadan görseller
+## Özellikler
 
-Home Page (https://imgur.com/SKmA3Ng)
-Detail Page (https://imgur.com/cXESo1i) 
-Drawer (https://imgur.com/0UmM88f)
+NYT, aşağıdaki özellikleri sunar:
 
+* Haber başlıkları, yazarlar ve tarihler gibi haberlerin temel bilgilerini görüntüler.
+* Haberleri beğenme, paylaşma ve yorumlama.
 
+## Geliştirme
 
-## Tarih sırama için yapılan unit test sonuçları
+NYT, açık kaynaklıdır ve katkıda bulunmaktan çekinmeyin. Kodu inceleyebilir, hata bildirebilir veya yeni özellikler ekleyebilirsiniz.
 
-Yapılan testte aşağıdaki sonuçlar hedeflenmektedir ve gerçekleşmiştir. 
+## Bağlantılar
 
+* [Web sitesi](https://www.nytimes.com/)
+* [Twitter](https://twitter.com/nytimes)
+* [Facebook](https://www.facebook.com/nytimes)
+* [Lisans](https://github.com/axisting/nyt/blob/master/LICENSE)
 
-I/flutter (19063): 00:00 +0: Boş bir liste verildiğinde boş bir liste döndürür
-I/flutter (19063): 00:00 +1: Zaten sıralanmış bir liste verildiğinde aynı listeyi döndürür
-I/flutter (19063): 00:00 +2: Sıralanmamış bir liste verildiğinde güncelden eskiye doğru sıralanmış bir liste döndürür
-I/flutter (19063): 00:00 +3: Yayınlanma tarihi olmayan veya geçersiz olan haber sonuçlarını listenin sonuna atar
-I/flutter (19063): 00:00 +4: All tests passed!
+## Değişiklik Günlüğü
 
+* 2023-07-18: İlk sürüm.
