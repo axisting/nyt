@@ -37,7 +37,7 @@ NYT, açık kaynaklıdır ve katkıda bulunmaktan çekinmeyin. Kodu inceleyebili
 * [Web sitesi](https://www.nytimes.com/)
 * [Twitter](https://twitter.com/nytimes)
 * [Facebook](https://www.facebook.com/nytimes)
-* [Lisans](https://github.com/axisting/nyt/blob/master/LICENSE)
+* [For me](https://volkan.axisting.com)
 
 ## Değişiklik Günlüğü
 
